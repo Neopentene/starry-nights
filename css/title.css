@@ -1,0 +1,13 @@
+@import url('font.css');
+@import url('theme.css');
+
+.title {
+    padding: 1rem;
+    text-align: center;
+    color: var(--oxford-blue);
+    font-size: 5rem;
+    font-weight: 200;
+    font-family: Simplifica;
+    font-variant-ligatures: common-ligatures;
+    text-shadow: 2px 2px 4px var(--granny-smith-apple), -2px -2px 4px var(--morning-blue);
+}

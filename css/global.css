@@ -1,0 +1,101 @@
+@import url('theme.css');
+@import url('font.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--oxford-blue);
+}
+
+.p-rel {
+    position: relative;
+}
+
+.p-abs {
+    position: absolute;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.a-f-cen {
+    justify-content: center;
+    align-items: center;
+}
+
+.f-col {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.f-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.text-cen {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.btn {
+    position: relative;
+    border: none;
+    border-radius: 0.75rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    background-color: transparent;
+    transition: all 200ms;
+    font-family: FiraCode;
+}
+
+.btn.simple {
+    box-shadow: 0 0 0 2px var(--dark-sea-green);
+    color: var(--dark-sea-green)
+}
+
+.btn.simple:hover {
+    box-shadow: 0 0 0 2px var(--morning-blue);
+    background-color: var(--morning-blue);
+    color: var(--oxford-blue);
+}
+
+.btn.simple:active {
+    box-shadow: 0 0 0 2px var(--granny-smith-apple);
+    background-color: var(--granny-smith-apple);
+    color: var(--oxford-blue);
+}
+
+.btn.simple:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 115%;
+    height: 132.5%;
+    top: 50%;
+    left: 50%;
+    border-radius: 1rem;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 2px var(--morning-blue);
+    transition: all 200ms;
+}
+
+.btn.simple:active::after {
+    box-shadow: 0 0 0 2px var(--granny-smith-apple);
+}
+
+.min-w-224{
+    min-width: 224px;
+}
