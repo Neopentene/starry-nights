@@ -69,7 +69,7 @@ for (let i = 0; i < starCount; i++) {
     geometry.vertices.push(star);
 }
 
-const texture = new THREE.TextureLoader().load('./assets/white_blob.png', () => {
+const texture = new THREE.TextureLoader().load('../assets/white_blob.png', () => {
     starTexture = new THREE.PointsMaterial({
         color: 0x81a2a0,
         size: 0.5,
