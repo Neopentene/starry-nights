@@ -6,8 +6,8 @@
     text-align: center;
     color: var(--oxford-blue);
     font-size: 5rem;
-    font-weight: 200;
+    font-weight: 300;
     font-family: Simplifica;
     font-variant-ligatures: common-ligatures;
-    text-shadow: 2px 2px 4px var(--granny-smith-apple), -2px -2px 4px var(--morning-blue);
+    text-shadow: 3px 3px 4px var(--granny-smith-apple-bright), -2px -2px 4px var(--morning-blue);
 }

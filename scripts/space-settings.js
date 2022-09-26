@@ -1,5 +1,9 @@
 import { openModal, closeModal, clamp } from "./modal.js";
 
+function generateHeader () {
+    return `<div class="text-cen bold">Settings</div>`
+}
+
 function generateBody() {
     return `
         <div class="d-flex a-f-cen f-col">
@@ -27,7 +31,7 @@ function generateFooter() {
 }
 
 document.getElementById('space-settings').addEventListener('click', () => {
-    openModal("modal-space-settings", "Settings", generateBody(), generateFooter());
+    openModal("modal-space-settings", generateHeader(), generateBody(), generateFooter());
     const starCountRange = document.getElementById('star-count-range');
     const starSpeedRange = document.getElementById('star-speed-range');
     const starRotationRange = document.getElementById('star-rotation-range');

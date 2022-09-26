@@ -34,6 +34,7 @@ function openModal(overlayId = "", header = '', body = '', footer = '') {
             </div>
         </div>
     `;
+    overlay.addEventListener('click', (event) => { if (event.target === overlay) closeModal(overlay) });
 
     document.body.appendChild(overlay);
     addEvents(overlay)
