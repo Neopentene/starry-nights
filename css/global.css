@@ -15,6 +15,12 @@ body {
     background-color: var(--oxford-blue);
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
 .p-rel {
     position: relative;
 }
@@ -94,6 +100,15 @@ body {
 
 .btn.simple:active::after {
     box-shadow: 0 0 0 2px var(--granny-smith-apple);
+}
+
+.input.simple {
+    max-width: 70%;
+    padding: 0.1rem;
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    background-color: transparent;
 }
 
 .min-w-224{
