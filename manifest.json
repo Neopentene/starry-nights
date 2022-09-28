@@ -4,6 +4,7 @@
     "short_name": "StarryNights",
     "background_color": "#011937",
     "start_url": "./index.html",
+    "theme_color": "#011937",
     "display": "standalone",
     "description": "A simple web application used as an experiment ground for CSS and JS animations and tricks",
     "orientation": "portrait-primary",
