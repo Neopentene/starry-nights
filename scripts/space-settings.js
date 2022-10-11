@@ -85,6 +85,6 @@ document.getElementById('space-settings').addEventListener('click', () => {
         localStorage.setItem('starRotation', clamp(rotation, 0.01, 1));
 
         window.dispatchEvent(event);
-        closeModal(document.getElementById("modal-space-settings"));
+        // closeModal(document.getElementById("modal-space-settings"));
     });
 })
