@@ -105,7 +105,7 @@ const texture = new THREE.TextureLoader().load('./assets/white_blob.png', () => 
     window.addEventListener('touchmove', (event) => {
         event.preventDefault();
         rotateCamera(event.touches[0].clientX, event.touches[0].clientY);
-    });
+    }, { passive: false });
 
     animate();
 })

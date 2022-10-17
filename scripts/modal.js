@@ -17,13 +17,13 @@ const getPoints = (clientX = 0, clientY = 0, boundingBox, radius = 0) => {
     }
 }
 
-function openModal(overlayId = "", header = '', body = '', footer = '', isForm = false, onSubmit = () => {}) {
+function openModal(overlayId = "", header = '', body = '', footer = '', isForm = false, onSubmit = () => { }) {
     let overlay = document.createElement('div');
 
     overlay.id = overlayId;
     overlay.classList = "modal-overlay d-flex a-f-cen modal-fadeIn";
     overlay.innerHTML = `
-        <${isForm ? "form":"div"} id="${overlayId}-form" class="modal">
+        <${isForm ? "form" : "div"} id="${overlayId}-form" class="modal">
             <div class="modal-header">${header}</div>
             <div class="modal-body">${body}</div>
             <div class="modal-footer">${footer}</div>
@@ -32,7 +32,7 @@ function openModal(overlayId = "", header = '', body = '', footer = '', isForm =
                     <img src="assets/close.svg" alt="" srcset="">
                 </div>
             </div>
-        </${isForm ? "form":"div"}>
+        </${isForm ? "form" : "div"}>
     `;
     overlay.addEventListener('click', (event) => { if (event.target === overlay) closeModal(overlay) });
 
@@ -77,7 +77,7 @@ const addEvents = (element = document.createElement('div')) => {
             closeButton.clientWidth * (1 / 4)
         );
         closeButton.style.transform = `translate(${boundingCircle.x}px, ${boundingCircle.y}px)`;
-    })
+    }, { passive: false })
     closeButton.addEventListener('click', () => { closeModal(element) })
 }
 
