@@ -57,8 +57,8 @@ document.getElementById('space-settings').addEventListener('click', () => {
         ranges[index].value = Number.parseInt(baseValue * rangeBoundaries[index].scale);
 
         range.addEventListener('input', () => {
-            let value = Number.parseInt(range.value) * rangeBoundaries[index].scale;
-            ranges[index].value = clamp(value, rangeBoundaries[index].min, rangeBoundaries[index].max);
+            let value = Number.parseFloat(range.value) * rangeBoundaries[index].scale;
+            ranges[index].value = value;
         })
 
         ranges[index].addEventListener('input', () => {
